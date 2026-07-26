@@ -431,6 +431,18 @@
                inline style the script sets, so below 760px the nav was hidden AND the burger
                was hidden — leaving phones with no navigation at all. */
         }
+        /* Narrow phones: the burger + "Book a Fix" squeeze the brand lockup, which
+           wrapped "TV Fix Pro" onto two lines and the tagline onto three. */
+
+        @media (max-width: 460px) {
+            .brand-name {
+                white-space: nowrap;
+                font-size: 18px !important;
+            }
+            .brand-tag {
+                display: none;
+            }
+        }
         /* Keyboard focus must stay visible: every input sets outline:none inline. */
 
         a:focus-visible,
@@ -476,7 +488,7 @@
                     <div style="padding:12px 16px 12px 18px;display:flex;align-items:center;justify-content:space-between;gap:18px;">
                         <a href="#top" style="display:flex;align-items:center;gap:11px;color:#1C1636;">
                             <div style="width:60px;height:60px;display:flex;align-items:center;justify-content:center;position:relative;"><img src="./assets/logo.png" width="240" height="163" alt="TV Fix Pro logo" fetchpriority="high" decoding="async"></div>
-                            <span style="font-family:'Sora',sans-serif;font-weight:800;font-size:21px;line-height:1;">TV Fix Pro<br><span style="font-family:'Space Mono',monospace;font-size:9.5px;color:#8A86A0;font-weight:400;letter-spacing:.04em;">Expert care for your Screen</span></span>
+                            <span class="brand-name" style="font-family:'Sora',sans-serif;font-weight:800;font-size:21px;line-height:1;">TV Fix Pro<br><span class="brand-tag" style="font-family:'Space Mono',monospace;font-size:9.5px;color:#8A86A0;font-weight:400;letter-spacing:.04em;">Expert care for your Screen</span></span>
                         </a>
                         <nav id="primaryNav" style="display:flex;">
                             <ul style="display:flex;list-style:none;margin:0;padding:0;gap:2px;">
@@ -1093,8 +1105,8 @@
                     </div>
                 </div>
                 <div style="border-top:1px solid rgba(28,22,54,0.1);margin-top:46px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:#9A96AE; ">
-                <span>© 2026 TV Fix Pro. TV Fix Pro content — replace with your business details.</span>
-                <span>Serving Bangalore · Bangalore</span>
+                <span>© 2026 TV Fix Pro. All rights reserved.</span>
+                <span>Serving Bengaluru · Banashankari · Kathreguppe · Jayanagar · JP Nagar</span>
             </div>
     </div>
     </footer>
