@@ -1,0 +1,15 @@
+{
+  "name": "TV Fix Pro — TV Repair in Bangalore",
+  "short_name": "TV Fix Pro",
+  "description": "Same-day LED, LCD and smart TV repair in Bangalore with free door pickup and a 90-day warranty.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#EEEBFA",
+  "theme_color": "#6D4AF5",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

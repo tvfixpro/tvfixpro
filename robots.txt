@@ -1,0 +1,8 @@
+# https://tvfixpro.github.io/robots.txt
+User-agent: *
+Allow: /
+
+# The confirmation page has no standalone search value.
+Disallow: /thank-you.html
+
+Sitemap: https://tvfixpro.github.io/sitemap.xml

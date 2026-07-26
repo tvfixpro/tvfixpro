@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- ============ PRIMARY SEO TAGS ============ -->
-    <!-- Keep title 50-60 characters. Put your city name in it — this is the #1 factor for "near me" ranking. -->
-    <title>TV Repair Near Me | Same-Day LED, LCD & Smart TV Repair – Sample</title>
-    <meta name="description" content="Fast, reliable TV repair near you. Sample fixes dead screens, no sound, frozen smart TVs & more — all brands, free door pickup, 90-day warranty. Call now.">
-    <meta name="keywords" content="tv repair near me, tv repair, tv repair service, smart tv repair, led tv repair, lcd tv repair, tv screen repair, tv not turning on, tv no sound, tv repair bangalore, tv repair mysore, tv repair hubballi, tv repair mangalore, tv repair hassan, tv technician near me, home tv repair service">
-    <meta name="robots" content="index, follow, max-image-preview:large">
+    <!-- Title: 60 chars, leads with the service, carries the city. -->
+    <title>TV Repair in Bangalore | Same-Day LED, LCD &amp; Smart TV Repair</title>
+    <meta name="description" content="Fast, reliable TV repair in Bangalore. TV Fix Pro fixes dead screens, no sound &amp; frozen smart TVs — all brands, free door pickup, 90-day warranty. Call now.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="TV Fix Pro">
-    <link rel="canonical" href="https://www.yourdomain.com/">
+    <meta name="theme-color" content="#6D4AF5">
+    <link rel="canonical" href="https://tvfixpro.github.io/">
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Geo tags — reinforce your service area for local/near-me search -->
     <meta name="geo.region" content="IN-KA">
@@ -21,54 +27,184 @@
     <meta name="ICBM" content="12.9716, 77.5946">
 
     <!-- ============ OPEN GRAPH (Facebook/WhatsApp/LinkedIn previews) ============ -->
-    <meta property="og:type" content="business.business">
-    <meta property="og:title" content="TV Repair Near Me | Same-Day LED, LCD & Smart TV Repair – Sample">
+    <!-- Static host: og:url must be a hard-coded absolute URL. Crawlers do not run JS. -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TV Repair in Bangalore | Same-Day LED, LCD &amp; Smart TV Repair">
     <meta property="og:description" content="Dead screen, no sound, frozen smart TV — one call gets a certified technician to your door, free of cost. All brands, same-day service, 90-day warranty.">
-    <meta property="og:url" content="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
-    <meta property="og:url" content="<%= request.protocol + '://' + request.get('host') + request.originalUrl %>">
+    <meta property="og:url" content="https://tvfixpro.github.io/">
+    <meta property="og:image" content="https://tvfixpro.github.io/assets/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TV Fix Pro — expert care for your screen">
     <meta property="og:locale" content="en_IN">
-    <meta property="og:site_name" content=" TV Repair">
+    <meta property="og:site_name" content="TV Fix Pro">
 
+    <!-- ============ TWITTER / X CARD ============ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TV Repair in Bangalore | Same-Day LED, LCD &amp; Smart TV Repair">
+    <meta name="twitter:description" content="Dead screen, no sound, frozen smart TV — one call gets a certified technician to your door. All brands, same-day service, 90-day warranty.">
+    <meta name="twitter:image" content="https://tvfixpro.github.io/assets/og-image.jpg">
+    <meta name="twitter:image:alt" content="TV Fix Pro — expert care for your screen">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Sora 500/600 were requested but never used — dropped. -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Structured data. One @graph so the entities cross-reference each other by @id.
+         No aggregateRating/Review is declared: Google requires those to be genuine,
+         collected reviews. Add them only via a real review platform. -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "ElectronicsRepairShop",
-            "name": "TV Fix Pro",
-            "image": "https://www.yourdomain.com/logo.jpg",
-            "url": "https://www.yourdomain.com/",
-            "telephone": "+91-9740696179",
-            "priceRange": "₹₹",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "janatha bazar bus stop, Kathreguppe, Banashankari 3rd Stage",
-                "addressLocality": "Bangalore",
-                "addressRegion": "Karnataka",
-                "postalCode": "560085",
-                "addressCountry": "IN"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "12.9716",
-                "longitude": "77.5946"
-            },
-            "areaServed": ["Bangalore"],
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "https://www.facebook.com/yourpage",
-                "https://www.instagram.com/yourpage",
-                "https://wa.me/919740696179"
-            ]
+            "@graph": [{
+                "@type": "ElectronicsRepairShop",
+                "@id": "https://tvfixpro.github.io/#business",
+                "name": "TV Fix Pro",
+                "description": "Same-day LED, LCD, QLED, OLED and smart TV repair across Bangalore, with free door pickup and a 90-day warranty on every repair.",
+                "slogan": "Expert care for your screen",
+                "image": "https://tvfixpro.github.io/assets/og-image.jpg",
+                "logo": "https://tvfixpro.github.io/assets/icon-512.png",
+                "url": "https://tvfixpro.github.io/",
+                "telephone": "+91-9740696179",
+                "priceRange": "₹₹",
+                "currenciesAccepted": "INR",
+                "paymentAccepted": "Cash, UPI, Credit Card, Debit Card",
+                "knowsLanguage": ["en", "kn", "hi"],
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "No 200, opposite Janatha Bazar Bus Stop, Kathreguppe, Banashankari 3rd Stage",
+                    "addressLocality": "Bengaluru",
+                    "addressRegion": "Karnataka",
+                    "postalCode": "560085",
+                    "addressCountry": "IN"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "12.9716",
+                    "longitude": "77.5946"
+                },
+                "hasMap": "https://share.google/KQqgugmMEzZOpjfPt",
+                "areaServed": [{
+                    "@type": "City",
+                    "name": "Bengaluru"
+                }, {
+                    "@type": "City",
+                    "name": "Mysore"
+                }, {
+                    "@type": "City",
+                    "name": "Mangalore"
+                }, {
+                    "@type": "City",
+                    "name": "Hubballi"
+                }, {
+                    "@type": "City",
+                    "name": "Hassan"
+                }],
+                "openingHoursSpecification": [{
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                }],
+                "sameAs": ["https://wa.me/919740696179"],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "TV repair services",
+                    "itemListElement": [{
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "LCD & LED TV Repair",
+                            "description": "Backlight, power board, motherboard and display-fault repair for LCD and LED televisions of every brand."
+                        }
+                    }, {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Screen & Panel Replacement",
+                            "description": "Cracked, lined or dead panel replacement using grade-A panels matched to your exact model."
+                        }
+                    }, {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Smart TV & Software Issues",
+                            "description": "Frozen smart TVs, failed firmware updates, Wi-Fi drop-outs, app crashes and boot loops."
+                        }
+                    }, {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Sound & Speaker Repair",
+                            "description": "No audio, distorted output, crackling speakers and amplifier or audio-IC faults."
+                        }
+                    }, {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Door Pickup & Drop",
+                            "description": "Free collection and return of your television anywhere in Bangalore when a workshop repair is required."
+                        }
+                    }]
+                }
+            }, {
+                "@type": "WebSite",
+                "@id": "https://tvfixpro.github.io/#website",
+                "url": "https://tvfixpro.github.io/",
+                "name": "TV Fix Pro",
+                "inLanguage": "en-IN",
+                "publisher": {
+                    "@id": "https://tvfixpro.github.io/#business"
+                }
+            }, {
+                "@type": "WebPage",
+                "@id": "https://tvfixpro.github.io/#webpage",
+                "url": "https://tvfixpro.github.io/",
+                "name": "TV Repair in Bangalore | Same-Day LED, LCD & Smart TV Repair",
+                "isPartOf": {
+                    "@id": "https://tvfixpro.github.io/#website"
+                },
+                "about": {
+                    "@id": "https://tvfixpro.github.io/#business"
+                },
+                "primaryImageOfPage": "https://tvfixpro.github.io/assets/og-image.jpg",
+                "inLanguage": "en-IN"
+            }, {
+                "@type": "FAQPage",
+                "@id": "https://tvfixpro.github.io/#faq",
+                "isPartOf": {
+                    "@id": "https://tvfixpro.github.io/#webpage"
+                },
+                "mainEntity": [{
+                    "@type": "Question",
+                    "name": "How long does a TV repair typically take?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most repairs are completed within 24–48 hours of diagnosis. Simple faults like sound or connection issues are often fixed the same day, while panel replacements can take slightly longer depending on part availability."
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "Do you offer warranties on repairs?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes — every repair carries a 90-day service warranty covering the part replaced and the labour performed, so you're protected if the same issue recurs."
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "Can you repair all TV brands and models?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We service all major brands including Sony, Samsung, LG, Toshiba, Sanyo, Philips and Panasonic, across LED, LCD, QLED and OLED panel types."
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "Do you offer on-site repairs or do I need to bring my TV to your shop?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Both. Many faults are fixed on-site during the first visit. If a workshop repair is needed, we collect and return the TV to your home free of charge."
+                    }
+                }]
+            }]
         }
     </script>
     <style>
@@ -102,6 +238,7 @@
         svg {
             display: block;
             max-width: 100%;
+            height: auto;
         }
         
         button {
@@ -290,9 +427,19 @@
                 display: flex;
                 width: 100%;
             }
-            #menuBtn {
-                display: none !important;
-            }
+            /* NOTE: a "#menuBtn{display:none!important}" rule used to live here. It beat the
+               inline style the script sets, so below 760px the nav was hidden AND the burger
+               was hidden — leaving phones with no navigation at all. */
+        }
+        /* Keyboard focus must stay visible: every input sets outline:none inline. */
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        summary:focus-visible {
+            outline: 3px solid #4E2FD6;
+            outline-offset: 2px;
+            border-radius: 6px;
         }
     </style>
 </head>
@@ -318,7 +465,7 @@
                     DOOR PICKUP &amp; DROP </span>
                     <div class="top" style="display:flex;gap:20px;">
                         <a href="tel:+919740696179" style="color:#3A3358;display:inline-flex;align-items:center;gap:6px;font-weight:700;">📞 9740696179</a>
-                        <a href="https://wa.me/919740696179?text=Hello%2C%20I%20have%20a%20query%20regarding ?text=Hello%2C%20I%20have%20a%20query%20regarding" target="_blank" rel="noopener" style="color:var(--accent,#6D4AF5);display:inline-flex;align-items:center;gap:6px;font-weight:700;">WhatsApp →</a>
+                        <a href="https://wa.me/919740696179?text=Hi%20TV%20Fix%20Pro%2C%20I%20need%20help%20with%20my%20TV" target="_blank" rel="noopener" style="color:var(--accent,#6D4AF5);display:inline-flex;align-items:center;gap:6px;font-weight:700;">WhatsApp →</a>
                     </div>
                 </div>
             </div>
@@ -328,7 +475,7 @@
                 <header style="max-width:1180px;margin:0 auto;background:rgba(255,255,255,0.62);backdrop-filter:saturate(160%) blur(20px);-webkit-backdrop-filter:saturate(160%) blur(20px);border:1px solid rgba(255,255,255,0.75);border-radius:22px;box-shadow:0 16px 40px rgba(70,60,140,0.12);">
                     <div style="padding:12px 16px 12px 18px;display:flex;align-items:center;justify-content:space-between;gap:18px;">
                         <a href="#top" style="display:flex;align-items:center;gap:11px;color:#1C1636;">
-                            <div style="width:60px;height:60px;display:flex;align-items:center;justify-content:center;position:relative;"><img src="./assets/logo.png" alt="..."></div>
+                            <div style="width:60px;height:60px;display:flex;align-items:center;justify-content:center;position:relative;"><img src="./assets/logo.png" width="240" height="163" alt="TV Fix Pro logo" fetchpriority="high" decoding="async"></div>
                             <span style="font-family:'Sora',sans-serif;font-weight:800;font-size:21px;line-height:1;">TV Fix Pro<br><span style="font-family:'Space Mono',monospace;font-size:9.5px;color:#8A86A0;font-weight:400;letter-spacing:.04em;">Expert care for your Screen</span></span>
                         </a>
                         <nav id="primaryNav" style="display:flex;">
@@ -366,7 +513,7 @@
                         <p style="color:#5D5878;font-size:18px;max-width:490px;margin-top:22px;line-height:1.6;font-weight:500;">Dead screen, no sound, frozen smart TV — one call gets a certified technician to your door, free of cost. LED, LCD &amp; Smart TVs, every brand, fixed right the first time.</p>
                         <div style="display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;">
                             <a href="tel:+919740696179" class="btn-lift" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:17px 30px;border-radius:999px;font-weight:800;font-size:16px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0 16px 32px var(--accent-shadow,rgba(109,74,245,0.34));">Get It Fixed Today →</a>
-                            <a href="https://wa.me/919740696179?text=Hello%2C%20I%20have%20a%20query%20regarding" target="_blank" rel="noopener" class="btn-ghost" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:17px 30px;border-radius:999px;font-weight:800;font-size:16px;background:rgba(255,255,255,0.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#1C1636;border:1px solid rgba(255,255,255,0.8);box-shadow:0 8px 20px rgba(70,60,140,0.08);">Chat on WhatsApp</a>
+                            <a href="https://wa.me/919740696179?text=Hi%20TV%20Fix%20Pro%2C%20I%20need%20help%20with%20my%20TV" target="_blank" rel="noopener" class="btn-ghost" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:17px 30px;border-radius:999px;font-weight:800;font-size:16px;background:rgba(255,255,255,0.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#1C1636;border:1px solid rgba(255,255,255,0.8);box-shadow:0 8px 20px rgba(70,60,140,0.08);">Chat on WhatsApp</a>
                         </div>
                         <div style="display:flex;gap:12px;margin-top:38px;flex-wrap:wrap;">
                             <div style="background:rgba(255,255,255,0.6);backdrop-filter:blur(14px) saturate(150%);-webkit-backdrop-filter:blur(14px) saturate(150%);border:1px solid rgba(255,255,255,0.75);border-radius:16px;padding:12px 18px;box-shadow:0 10px 26px rgba(70,60,140,0.08);">
@@ -397,7 +544,7 @@
                                         <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 20% 8%,rgba(255,255,255,0.28),transparent 55%);"></div>
                                         <div style="position:absolute;top:12px;left:14px;display:inline-flex;align-items:center;gap:6px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;color:#fff;font-weight:700;text-shadow:0 1px 3px rgba(40,20,90,0.35);"><span style="width:7px;height:7px;border-radius:50%;background:#B9FFCE;box-shadow:0 0 8px #B9FFCE;animation:blink 1.4s ease-in-out infinite;"></span>LIVE DIAGNOSTIC</div>
                                         <div style="position:absolute;left:0;right:0;bottom:0%;height:44%;display:flex;align-items:flex-end;justify-content:center;gap:8px;">
-                                            <img src="./assets/logofull.png" alt="..."></div>
+                                            <img src="./assets/logofull.png" width="800" height="542" alt="TV Fix Pro — expert care for your screen" loading="lazy" decoding="async"></div>
                                         <div style="position:absolute;left:14px;bottom:12px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;color:#fff;font-weight:700;text-shadow:0 1px 3px rgba(40,20,90,0.35);">SIGNAL RESTORED · 4K · HDR</div>
                                         <div style="position:absolute;left:5%;right:5%;height:16px;top:14%;background:linear-gradient(180deg,rgba(255,255,255,0.85),rgba(255,255,255,0));animation:scan 2.8s ease-in-out infinite;border-radius:4px;mix-blend-mode:screen;pointer-events:none;"></div>
                                     </div>
@@ -438,27 +585,35 @@
 
 
                     <form action="https://api.web3forms.com/submit" method="POST" style="background:rgba(255,255,255,0.62); backdrop-filter:blur(24px) saturate(160%); -webkit-backdrop-filter:blur(24px) saturate(160%);border:1px solid rgba(255,255,255,0.8);border-radius:28px;padding:30px;box-shadow:0 30px 60px rgba(70,60,140,0.16);display:grid;gap:16px;">
-                        <!-- Web3Forms Access Key -->
+                        <!-- Web3Forms access key. This is a PUBLIC, submit-only key: it is
+                             served to every visitor in the page source no matter who can see
+                             the repo, so a public repo leaks nothing extra. Lock it down in the
+                             Web3Forms dashboard by restricting it to this domain. -->
                         <input type="hidden" name="access_key" value="e37eb193-9336-4a70-86c9-7d22950238b2">
+                        <input type="hidden" name="subject" value="New TV repair callback request">
+                        <input type="hidden" name="from_name" value="TV Fix Pro Website">
+                        <input type="hidden" name="redirect" value="https://tvfixpro.github.io/thank-you.html">
+                        <!-- Honeypot: invisible to humans, bots fill it and Web3Forms drops the message. -->
+                        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important;">
                         <!-- Name -->
                         <div style="display:flex;flex-direction:column;gap:7px;">
-                            <label style="  font-size:11.5px; font-weight:700;color:#7A7591;  text-transform:uppercase; letter-spacing:.06em;"> Name </label>
-                            <input type="text" name="name" placeholder="Your Full Name" required style="padding:15px 16px; border-radius:14px; border:1.5px solid rgba(28,22,54,.12); background:rgba(255,255,255,.7); font-size:15px;color:#1C1636;  outline:none;">
+                            <label for="cb-name" style="  font-size:11.5px; font-weight:700;color:#7A7591;  text-transform:uppercase; letter-spacing:.06em;"> Name </label>
+                            <input id="cb-name" type="text" name="name" placeholder="Your Full Name" required autocomplete="name" style="padding:15px 16px; border-radius:14px; border:1.5px solid rgba(28,22,54,.12); background:rgba(255,255,255,.7); font-size:15px;color:#1C1636;  outline:none;">
                         </div>
                         <!-- Mobile -->
                         <div style="display:flex;flex-direction:column;gap:7px;">
-                            <label style=" font-size:11.5px; font-weight:700; color:#7A7591; text-transform:uppercase; letter-spacing:.06em;"> Mobile Number</label>
-                            <input type="tel" name="mobile" placeholder="10-digit Mobile Number" required style=" padding:15px 16px; border-radius:14px;  border:1.5px solid rgba(28,22,54,.12);  background:rgba(255,255,255,.7);font-size:15px;color:#1C1636;outline:none;">
+                            <label for="cb-mobile" style=" font-size:11.5px; font-weight:700; color:#7A7591; text-transform:uppercase; letter-spacing:.06em;"> Mobile Number</label>
+                            <input id="cb-mobile" type="tel" name="mobile" placeholder="10-digit Mobile Number" required autocomplete="tel-national" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" title="Enter a 10-digit Indian mobile number, starting with 6, 7, 8 or 9." style=" padding:15px 16px; border-radius:14px;  border:1.5px solid rgba(28,22,54,.12);  background:rgba(255,255,255,.7);font-size:15px;color:#1C1636;outline:none;">
                         </div>
 
                         <!-- TV Brand -->
                         <div style="display:flex;flex-direction:column;gap:7px;">
-                            <label style=" font-size:11.5px;font-weight:700;  color:#7A7591;text-transform:uppercase;letter-spacing:.06em;"> TV Brand </label>
-                            <input type="text" name="tv_brand" placeholder="Samsung, LG, Sony..." style="padding:15px 16px;   border-radius:14px;  border:1.5px solid rgba(28,22,54,.12);background:rgba(255,255,255,.7);color:#1C1636;outline:none;">
+                            <label for="cb-brand" style=" font-size:11.5px;font-weight:700;  color:#7A7591;text-transform:uppercase;letter-spacing:.06em;"> TV Brand </label>
+                            <input id="cb-brand" type="text" name="tv_brand" placeholder="Samsung, LG, Sony..." autocomplete="off" style="padding:15px 16px;   border-radius:14px;  border:1.5px solid rgba(28,22,54,.12);background:rgba(255,255,255,.7);color:#1C1636;outline:none;">
                         </div>
 
                         <!-- Submit -->
-                        <button type="submit" target="_blank" style=" width:100%;  padding:16px; border:none;  border-radius:999px; background:linear-gradient(135deg,#6D4AF5,#4E2FD6);color:#fff;font-size:16px;font-weight:700;cursor:pointer; box-shadow:0 14px 30px rgba(109,74,245,.34);"> Get My Free Callback →</button>
+                        <button type="submit" style=" width:100%;  padding:16px; border:none;  border-radius:999px; background:linear-gradient(135deg,#6D4AF5,#4E2FD6);color:#fff;font-size:16px;font-weight:700;cursor:pointer; box-shadow:0 14px 30px rgba(109,74,245,.34);"> Get My Free Callback →</button>
 
                         <p style=" margin:0; text-align:center;font-size:12px;color:#8A86A0;"> Real technicians. Real answers. 15-minute response, 7 days a week. </p>
 
@@ -504,7 +659,7 @@
                             <span style="position:absolute;top:22px;right:22px;font-family: 'Space Mono',monospace;font-size:11px;color:var(--accent,#6D4AF5);font-weight:700;z-index:2; ">TV Fix Pro · CERTIFIED</span>
                             <div style="border-radius:18px;overflow:hidden;background:#F1EFFB;border:1px solid rgba(255,255,255,0.7); ">
                                 <svg viewBox="0 0 380 300 " width="100% " style="display:block; ">
-                                    <defs><radialGradient id="g2 " cx="30% " cy="28% " r="85% "><stop offset="0% " stop-color="var(--accent,#6D4AF5) " stop-opacity="0.85 "/><stop offset="55% " stop-color="#7C9BFF " stop-opacity="0.6 "/><stop offset="100% " stop-color="#8FE0D0
+                                    <defs><radialGradient id="g2" cx="30% " cy="28% " r="85% "><stop offset="0% " stop-color="var(--accent,#6D4AF5) " stop-opacity="0.85 "/><stop offset="55% " stop-color="#7C9BFF " stop-opacity="0.6 "/><stop offset="100% " stop-color="#8FE0D0
                                                     " stop-opacity="0.5 "/></radialGradient></defs>
                                     <rect x="18 " y="20 " width="344 " height="210 " rx="16 " fill="#EEEBFA "/>
                                     <rect x="34 " y="36 " width="312 " height="178 " rx="10 " fill="url(#g2) "/>
@@ -521,7 +676,7 @@
             </section>
 
             <!-- WHY CHOOSE US (glass bento) -->
-            <section id="why " style="padding:70px 0; ">
+            <section id="why" style="padding:70px 0; ">
                 <div style="max-width:1220px;margin:0 auto;padding:0 24px; ">
                     <div data-reveal style="max-width:680px;margin:0 auto 44px;text-align:center; ">
                         <span style="display:inline-flex;align-items:center;gap:8px;font-family: 'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent,#6D4AF5); "><span style="width:8px;height:8px;background:var(--accent,#6D4AF5);border-radius:3px;display:inline-block; "></span>Why
@@ -618,7 +773,7 @@
                                         <li style="display:flex;gap:10px;font-size:15px;color:#1C1636;align-items:flex-start;font-weight:600; "><svg width="18 " height="18 " viewBox="0 0 24 24 " fill="none " stroke="#12B981 " stroke-width="3
                             " style="flex-shrink:0;margin-top:2px; "><path d="M20 6L9 17l-5-5 "/></svg>Free home diagnosis visit</li>
                                     </ul>
-                                    <a href="tel:+919740696179 " class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0
+                                    <a href="tel:+919740696179" class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0
                             12px 26px var(--accent-shadow,rgba(109,74,245,0.3)); ">Bring My TV Back to Life</a>
                                 </div>
                             </div>
@@ -638,7 +793,7 @@
                                         <li style="display:flex;gap:10px;font-size:15px;color:#1C1636;align-items:flex-start;font-weight:600; "><svg width="18 " height="18 " viewBox="0 0 24 24 " fill="none " stroke="#12B981 " stroke-width="3
                             " style="flex-shrink:0;margin-top:2px; "><path d="M20 6L9 17l-5-5 "/></svg>90-day panel warranty</li>
                                     </ul>
-                                    <a href="tel:+919740696179 " class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0
+                                    <a href="tel:+919740696179" class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0
                             12px 26px var(--accent-shadow,rgba(109,74,245,0.3)); ">Get My Free Quote</a>
                                 </div>
                             </div>
@@ -658,7 +813,7 @@
                                         <li style="display:flex;gap:10px;font-size:15px;color:#1C1636;align-items:flex-start;font-weight:600; "><svg width="18 " height="18 " viewBox="0 0 24 24 " fill="none " stroke="#12B981 " stroke-width="3
                             " style="flex-shrink:0;margin-top:2px; "><path d="M20 6L9 17l-5-5 "/></svg>Remote &amp; voice control pairing</li>
                                     </ul>
-                                    <a href="tel:+919740696179 " class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0
+                                    <a href="tel:+919740696179" class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0
                             12px 26px var(--accent-shadow,rgba(109,74,245,0.3)); ">Sort My Smart TV</a>
                                 </div>
                             </div>
@@ -678,7 +833,7 @@
                                         <li style="display:flex;gap:10px;font-size:15px;color:#1C1636;align-items:flex-start;font-weight:600; "><svg width="18 " height="18 " viewBox="0 0 24 24 " fill="none " stroke="#12B981 " stroke-width="3
                             " style="flex-shrink:0;margin-top:2px; "><path d="M20 6L9 17l-5-5 "/></svg>Same-day repair in most cases</li>
                                     </ul>
-                                    <a href="tel:+919740696179 " class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0
+                                    <a href="tel:+919740696179" class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0
                             12px 26px var(--accent-shadow,rgba(109,74,245,0.3)); ">Fix My Sound</a>
                                 </div>
                             </div>
@@ -698,7 +853,7 @@
                                         <li style="display:flex;gap:10px;font-size:15px;color:#1C1636;align-items:flex-start;font-weight:600; "><svg width="18 " height="18 " viewBox="0 0 24 24 " fill="none " stroke="#12B981 " stroke-width="3
                             " style="flex-shrink:0;margin-top:2px; "><path d="M20 6L9 17l-5-5 "/></svg>No delivery charges, ever</li>
                                     </ul>
-                                    <a href="tel:+919740696179 " class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0
+                                    <a href="tel:+919740696179" class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--accent,#6D4AF5),var(--accent-deep,#4E2FD6));color:#fff;box-shadow:0
                             12px 26px var(--accent-shadow,rgba(109,74,245,0.3)); ">Book Door Pickup</a>
                                 </div>
                             </div>
@@ -750,11 +905,10 @@
 
                     </div>
                 </div>
-        </div>
-        </section>
+            </section>
 
-        <!-- FAQ + CONTACT -->
-        <section id="faq " style="padding:60px 0 70px; ">
+            <!-- FAQ + CONTACT -->
+        <section id="faq" style="padding:60px 0 70px; ">
             <div style="max-width:1220px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:start; " class="faq-grid ">
                 <div data-reveal>
                     <div style="margin-bottom:26px; ">
@@ -799,8 +953,8 @@
                     <div style="position:absolute;width:240px;height:240px;background:rgba(255,255,255,0.16);border-radius:50%;top:-90px;right:-90px; "></div>
                     <h3 style="font-family: 'Sora',sans-serif;font-size:26px;position:relative;letter-spacing:-0.02em;font-weight:800;line-height:1.08; ">Not sure what's actually wrong?</h3>
                     <p style="color:rgba(255,255,255,0.9);margin-top:12px;position:relative;font-size:15px;line-height:1.6;font-weight:500; ">Skip the guesswork. Call us and a real technician will walk through the symptoms with you before you book a thing.</p>
-                    <a href="tel:+919740696179 " style="font-family: 'Sora',sans-serif;font-size:30px;font-weight:800;margin-top:24px;display:block;position:relative;color:#fff;letter-spacing:-0.01em; ">+91 97406 96179</a>
-                    <a href="https://wa.me/919740696179?text=Hello%2C%20I%20have%20a%20query%20regarding " target="_blank " rel="noopener " class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:20px;position:relative;padding:15px
+                    <a href="tel:+919740696179" style="font-family: 'Sora',sans-serif;font-size:30px;font-weight:800;margin-top:24px;display:block;position:relative;color:#fff;letter-spacing:-0.01em; ">+91 97406 96179</a>
+                    <a href="https://wa.me/919740696179?text=Hi%20TV%20Fix%20Pro%2C%20I%20need%20help%20with%20my%20TV" target="_blank " rel="noopener " class="btn-lift " style="display:inline-flex;align-items:center;gap:8px;margin-top:20px;position:relative;padding:15px
                             26px;border-radius:999px;font-weight:800;font-size:15px;background:#fff;color:var(--accent,#6D4AF5);box-shadow:0 12px 26px rgba(40,20,90,0.2); ">Message on WhatsApp</a>
                 </div>
             </div>
@@ -825,7 +979,7 @@
             </div>
 
             <div style="position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); ">
-                <div id="tTrack " class="t-track " style="display:flex;gap:22px;width:max-content;padding:8px 22px;animation:tmarquee 42s linear infinite; ">
+                <div id="tTrack" class="t-track " style="display:flex;gap:22px;width:max-content;padding:8px 22px;animation:tmarquee 42s linear infinite; ">
                     <div class="t-card " style="width:360px;background:rgba(255,255,255,0.62);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(255,255,255,0.8);border-radius:26px;padding:30px;box-shadow:0
                             18px 44px rgba(70,60,140,0.1);position:relative;transition:transform .25s,box-shadow .25s; ">
                         <span style="position:absolute;top:16px;right:24px;font-family: 'Sora',sans-serif;font-size:80px;line-height:1;color:var(--accent-tint,rgba(109,74,245,0.14));font-weight:800; ">"</span>
@@ -916,7 +1070,7 @@
                 <div style="display:grid;grid-template-columns:1.1fr 1.1fr 1fr;gap:48px;" class="foot-grid">
                     <div>
                         <div style="display:flex;align-items:center;gap:11px;margin-bottom:18px;">
-                            <div style="width:60px;height:60px;border-radius:14px;display:flex;align-items:center;"><img src="./assets/logo.png" alt="..."></div>
+                            <div style="width:60px;height:60px;border-radius:14px;display:flex;align-items:center;"><img src="./assets/logo.png" width="240" height="163" alt="TV Fix Pro logo" loading="lazy" decoding="async"></div>
                             <span style="font-family:'Sora',sans-serif;font-weight:800;font-size:21px;color:#1C1636;">TV Fix Pro</span>
                         </div>
                         <p style="font-size:14.5px;line-height:1.7;color:#5D5878;font-weight:500;">TV Fix Pro has been Karnataka's go-to TV repair name since 2000 — verified technicians, door pickup &amp; drop, and a 90-day warranty on every repair, across five cities.</p>
@@ -926,20 +1080,19 @@
                         <h4 style="color:#1C1636;font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-family:'Space Mono',monospace;margin:0 0 18px;">Reach Us</h4>
                         <a href="tel:+919740696179" style="display:block;margin-bottom:8px;font-size:14.5px;color:#5D5878;font-weight:600;">📞 9740696179</a>
                         <a href="mailto:tvfixpro@gmail.com" style="display:block;margin-bottom:8px;font-size:14.5px;color:#5D5878;font-weight:600;">✉️ tvfixpro@gmail.com</a>
-                        <div id="bangalore" style="display:flex;gap:8px;margin:14px 0;font-size:13.5px;line-height:1.6;color:#5D5878;"><span>📍</span><a href="https://share.google/KQqgugmMEzZOpjfPt" target="_blank" rel="noopener noreferrer" style="color:#5D5878;text-decoration:none;">TV Fix Pro, No 200, opposite Janatha Bazar Bus Stop, Kathreguppe,Banashankari 3rd Stage, Banashankari, Bengaluru, Karnataka 560085</a></div>
+                        <div id="address" style="display:flex;gap:8px;margin:14px 0;font-size:13.5px;line-height:1.6;color:#5D5878;"><span>📍</span><a href="https://share.google/KQqgugmMEzZOpjfPt" target="_blank" rel="noopener noreferrer" style="color:#5D5878;text-decoration:none;">TV Fix Pro, No 200, opposite Janatha Bazar Bus Stop, Kathreguppe,Banashankari 3rd Stage, Banashankari, Bengaluru, Karnataka 560085</a></div>
                     </div>
                     <div>
                         <h4 style="color:#1C1636;font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-family:'Space Mono',monospace;margin:0 0 18px;">Map View</h4>
-                        <div id="bangalore" style="margin:14px 0;">
-                            <iframe src="https://www.google.com/maps?q=no+200,+opposite+janatha+bazar+bus+stop,+Kathreguppe,+Banashankari+3rd+Stage,+Banashankari,+Bengaluru,+Karnataka+560085&output=embed" width="100%" height="300" style="border:0; border-radius:16px;" loading="lazy"
+                        <div id="map" style="margin:14px 0;">
+                            <iframe src="https://www.google.com/maps?q=no+200,+opposite+janatha+bazar+bus+stop,+Kathreguppe,+Banashankari+3rd+Stage,+Banashankari,+Bengaluru,+Karnataka+560085&amp;output=embed" width="100%" height="300" style="border:0; border-radius:16px;" title="Map showing TV Fix Pro in Banashankari 3rd Stage, Bengaluru" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                             <a href="https://www.google.com/maps/dir/?api=1&destination=Pixel+Technology+Banashankari+Bangalore" target="_blank"> 📍 Get Directions</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div style="border-top:1px solid rgba(28,22,54,0.1);margin-top:46px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:#9A96AE; ">
+                <div style="border-top:1px solid rgba(28,22,54,0.1);margin-top:46px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:#9A96AE; ">
                 <span>© 2026 TV Fix Pro. TV Fix Pro content — replace with your business details.</span>
                 <span>Serving Bangalore · Bangalore</span>
             </div>
@@ -948,7 +1101,7 @@
 
     </div>
 
-    <a href="https://wa.me/919740696179?text=Hello%2C%20I%20have%20a%20query%20regarding " target="_blank " rel="noopener " aria-label="Chat on WhatsApp " style="position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128C4B);display:flex;align-items:center;justify-content:center;box-shadow:0
+    <a href="https://wa.me/919740696179?text=Hi%20TV%20Fix%20Pro%2C%20I%20need%20help%20with%20my%20TV" target="_blank " rel="noopener " aria-label="Chat on WhatsApp " style="position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128C4B);display:flex;align-items:center;justify-content:center;box-shadow:0
                                 14px 30px rgba(18,140,75,0.45);z-index:60;animation:bob 3s ease-in-out infinite; ">
         <span style="position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:pulsering 2.4s ease-out infinite; "></span>
         <svg viewBox="0 0 24 24 " width="28 " height="28 " fill="#fff " style="position:relative; "><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45
@@ -957,8 +1110,6 @@
 
     </div>
     <script>
-        document.querySelector('meta[property="og:url"]')
-            .setAttribute('content', window.location.href);
         document.addEventListener('DOMContentLoaded', function() {
             // ---- Site configuration (edit these to customize the theme) ----
             var props = {
@@ -1058,7 +1209,13 @@
                     });
                 };
                 applyLayout();
-                window.addEventListener('resize', applyLayout);
+                let rAF = 0;
+                window.addEventListener('resize', () => {
+                    if (rAF) cancelAnimationFrame(rAF);
+                    rAF = requestAnimationFrame(applyLayout);
+                }, {
+                    passive: true
+                });
 
                 if (menuBtn && mobileMenu) {
                     menuBtn.addEventListener('click', () => {
@@ -1258,27 +1415,6 @@
                     });
                 }
 
-                const cb = root.querySelector('#callbackForm');
-                if (cb) cb.addEventListener('submit', (ev) => {
-                    ev.preventDefault();
-                    const note = cb.querySelector('.callback-note');
-                    if (note) {
-                        note.textContent = 'Thanks! A technician will call you shortly.';
-                        note.style.color = accent;
-                        note.style.fontWeight = '700';
-                    }
-                });
-                const ff = root.querySelector('#footForm');
-                if (ff) ff.addEventListener('submit', (ev) => {
-                    ev.preventDefault();
-                    if (!ff.querySelector('.foot-note')) {
-                        const p = document.createElement('p');
-                        p.className = 'foot-note';
-                        p.style.cssText = 'color:' + accent + ';margin-top:10px;font-size:13px;font-weight:700;';
-                        p.textContent = "Thanks — we 'll call you back shortly.";
-                        ff.appendChild(p);
-                    }
-                });
             })();
         });
     </script>
