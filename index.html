@@ -51,11 +51,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Sora 500/600 were requested but never used — dropped. -->
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Event snippet for Click to call (3) conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
-    <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-18363934218/YHgQCJ39x9scEIrMzbRE', 'value': 1.0, 'currency': 'INR', 'event_callback': callback }); return false; } </script>
-    <!-- Structured data. One @graph so the entities cross-reference each other by @id.
-         No aggregateRating/Review is declared: Google requires those to be genuine,
-         collected reviews. Add them only via a real review platform. -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -210,6 +205,20 @@
             }]
         }
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18363934218"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'AW-18363934218');
+    </script>
+    <!-- Event snippet for Contact conversion page -->
+    <script>
+      gtag('event', 'conversion', {'send_to': 'AW-18363934218/Edd5COj24NscEIrMzbRE'});
+    </script>
+
     <style>
         * {
             box-sizing: border-box;
@@ -458,9 +467,6 @@
         }
     </style>
 </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18363934218"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-18363934218'); </script>
-
 <body>
 
     <div id="sampleRoot" style="position:relative;font-family:'Plus Jakarta Sans',sans-serif;color:#1C1636;background:#EEEBFA;overflow:hidden;">
