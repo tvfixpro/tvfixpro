@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Event snippet for Click to call (3) conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
+    <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-18363934218/YHgQCJ39x9scEIrMzbRE', 'value': 1.0, 'currency': 'INR', 'event_callback': callback }); return false; } </script>
+
     <style>
         * {
             box-sizing: border-box;
@@ -142,7 +145,8 @@
         <h1>Got it — we'll call you back.</h1>
         <p>Your request has reached our nearest technician. Expect a call within about 15 minutes, 7 days a week.</p>
         <div class="row">
-            <a class="btn primary" href="tel:+919019513650">📞 Call now instead</a>
+            <a class="btn primary" onclick="return gtag_report_conversion('tel:+919019513650');" href="tel:+919019513650">📞 Call now instead</a>
+            
             <a class="btn ghost" href="/">← Back to the site</a>
         </div>
         <p class="note">Need to add details? Message us on
