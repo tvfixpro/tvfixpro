@@ -51,6 +51,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Sora 500/600 were requested but never used — dropped. -->
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Event snippet for Click to call (3) conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
+    <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-18363934218/YHgQCJ39x9scEIrMzbRE', 'value': 1.0, 'currency': 'INR', 'event_callback': callback }); return false; } </script>
     <!-- Structured data. One @graph so the entities cross-reference each other by @id.
          No aggregateRating/Review is declared: Google requires those to be genuine,
          collected reviews. Add them only via a real review platform. -->
